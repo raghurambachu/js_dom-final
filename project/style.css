@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General */
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(0,0,0,0.7);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.padding{
+    padding: 2.5em 0;
+}
+.flex{
+    display: flex;
+}
+img{
+    display: block;
+    object-fit: cover;
+}
+/* Typography */
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 1em;
+    align-self: center;
+}
+/* Header Section */
+header{
+    background: #3273DC;
+    color: whitesmoke;
+    text-align: center;
+}
+/* Tab Container Section */
+.tab-container{
+    justify-content: center;
+}
+.tab-list{
+    /* flex-wrap: wrap; */
+    overflow-x: auto;
+   
+}
+
+.tab-item{
+    color: rgba(0,0,0,0.7);
+    padding: 0.8em 1.5em;
+    border: 0.75px solid black;
+    cursor: pointer;
+    border-right: 0;
+}
+
+.tab-item:first-child{
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.tab-item:last-child{
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border: 1px solid black;
+}
+
+.active{
+    background: #3273DC;
+    color: whitesmoke;
+}
+
+.tab-item:hover{
+    background:rgba(0,0,0,0.1);
+}
+
+.active.tab-item:hover{
+    background: #3273DC;
+    color: whitesmoke;
+}
+
+.people-container{
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.person-item{
+    width: 22%;
+    border:1px solid whitesmoke;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.content{
+    margin-top: 1em;
+}
+
